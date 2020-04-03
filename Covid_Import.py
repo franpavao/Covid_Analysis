@@ -78,36 +78,5 @@ csv_url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv'
 dfInt = pd.read_csv(csv_url, sep = ',', encoding='latin-1') #2. To a dataframe
 today = date.today()
 
-#Read existing data into a dataframe
-df_pickle = pd.read_pickle('covid_data.pkl')
-print(len(df_pickle))
-
-#Remove from existing data Timestamp column
-keepint1 = set(df_pickle.columns)
-keepint1.remove('Timestamp')
-
-#Isolate new data points only.
-new_data = pd.concat([df, df_pickle[keepint1]], sort=False).drop_duplicates(keep=False)
-print(len(new_data))
-
-#Add timestamp to new data points
-new_data['Timestamp'] = today
-
-#Join data extracted with existing data
-dfInt_final = df_pickle.append(new_data)
-print(len(dfInt_final))
-
-#Upload the control file and update it
-# Load data
-with open('control.pkl', 'rb') as handle:
-    control = pickle.load(handle)
-
-#Update the dictionary
-#control = {}
-control[str(today)] = len(new_data)
-
 #Save resulting data frame and control dictionary to a pickle file
 dfInt_final.to_pickle('covid_data.pkl')
-
-with open('control.pkl', 'wb') as handle:
-    pickle.dump(control, handle, protocol=pickle.HIGHEST_PROTOCOL)
