@@ -1,15 +1,9 @@
-### Extract data ###
+#### Extract data ###
 import pandas as pd
 import os, sys
 from datetime import date
-import pickle
-
-#Set working directory
-wd = os.getcwd()
-print(wd)
-new_wd = wd + '/Covid_Analysis'
-wd = os.chdir(new_wd)
-print(os.getcwd())
+from selenium import webdriver
+import re
 
 ######## Portugal ################
 
@@ -53,6 +47,8 @@ keepPT1 = ['data', 'suspeitos', 'confirmados', 'confirmados_novos', 'recuperados
 
 dfPT1 = df[keepPT1]
 
+#Set the index
+dfPT1 = dfPT1.set_index(dfPT1.data)
 
 #Batch of columns for melt confirmed and deceased
 keep_meltPT2 = ['data', 'confirmados_0_9_f', 'confirmados_0_9_m', 'confirmados_10_19_f', 'confirmados_10_19_m', 'confirmados_20_29_f',
@@ -68,6 +64,49 @@ dfPT_agg = df[keep_meltPT2]
 dfPT_agg.to_pickle('dfPT_agg.pkl')
 dfPT1.to_pickle('dfPT1.pkl')
 
+###########################################################################################
+############################ Total tests for Portugal #####################################
+###########################################################################################
+
+class Coronavirus():
+  def __init__(self):
+    self.driver = webdriver.Chrome()
+
+bot = Coronavirus()
+bot.driver.get('https://www.worldometers.info/coronavirus/')
+
+table = bot.driver.find_element_by_xpath('//*[@id="main_table_countries_today"]/tbody[1]')
+country_element = table.find_element_by_xpath("//td[contains(., 'Portugal')]")
+row = country_element.find_element_by_xpath("./..")
+data = row.text.split(" ")
+
+bot.driver.close()
+
+# Cleanse the data received
+colunas = ['Country','total_cases','new_cases','total_deaths','new_deaths', 'active_cases', 'total_recovered', 'serious_critical',
+              'Total_cases_pop', 'Total_deaths_pop', 'Total_tests', 'Total_tests_pop', 'Timestamp']
+
+num = ['total_cases','new_cases','total_deaths','new_deaths', 'active_cases', 'total_recovered', 'serious_critical',
+              'Total_cases_pop', 'Total_deaths_pop', 'Total_tests', 'Total_tests_pop']
+
+novo = [re.sub('\+','',re.sub(',','',i)) for i in data]
+novo = novo + [date.today()]
+PT_wm = pd.DataFrame(novo).T
+PT_wm.columns = colunas
+PT_wm = PT_wm.set_index(PT_wm.Timestamp)
+for i in num:
+  PT_wm[i] = pd.to_numeric(PT_wm[i])
+
+#Read existing pickle
+old_wm = pd.read_pickle(r'PT_wm.pkl')
+
+#Append new data to existing pickle
+PT_wm = PT_wm.append(old_wm)
+PT_wm = PT_wm.drop_duplicates()
+
+## Save files as pickles
+PT_wm.to_pickle('PT_wm.pkl')
+
 ########################################################################################
 ################################# International ####################################
 ########################################################################################
@@ -76,7 +115,4 @@ dfPT1.to_pickle('dfPT1.pkl')
 #save url. Save it as data frame
 csv_url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv'
 dfInt = pd.read_csv(csv_url, sep = ',', encoding='latin-1') #2. To a dataframe
-today = date.today()
-
-#Save resulting data frame and control dictionary to a pickle file
-dfInt_final.to_pickle('covid_data.pkl')
+#today = date.today()
