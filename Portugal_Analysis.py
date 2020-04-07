@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+pd.set_option('display.max_colwidth', -1)
+
 ### Read Pickle Files
 
 dfPT_agg = pd.read_pickle('dfPT_agg.pkl')
@@ -41,39 +43,81 @@ print(gender)
 #Print current death ration
 print('Current death ration: ' + str((general.obitos.sum()/general.confirmados.sum())*100) + '%')
 
-
 #Plot Results
 #Total number of confirmed and deceased per age group
-general.confirmados.plot(color='b',style='.-', legend = True, rot=70)
-general.obitos.plot(color='r',style='.',legend=True, rot=70)
-plt.title('Total confirmed and deceased by age')
-plt.ylabel('Number of cases')
+figure, axis = plt.subplots(nrows=2, ncols = 1)
+general.confirmados.plot(color='b',style='.-', legend = True, ax = axis[0], title = 'Confirmed and deceased cases per age group' )
+general[general.obitos!=0].obitos.plot(color='r',style='.-',legend=True, ax = axis[1], rot = 70)
 plt.xlabel('Age')
-#plt.yscale('log')
 plt.show()
-
+#plt.ylabel('Number of deceased')
 
 #Percentage of deceased per age group
-general['%deceased'].plot(color='g',style='.',legend=True, rot=70)
-plt.title('Percentage deceased by age')
-plt.ylabel('Deceased')
+figure2,axis2 = plt.subplots(nrows = 3, ncols=1)
+general['%deceased'].plot(style='go',legend=True, ax = axis2[0], title='Percentage deceased per age group')
+gender.loc[(slice(None),'f'),'%deceased'].plot(style = 'r*', legend = False, ax=axis2[1], title = 'Women')
+gender.loc[(slice(None),'m'),'%deceased'].plot(style = 'cs', legend = False, ax=axis2[2], title = 'Men')
 plt.xlabel('Age')
-plt.tight_layout()
 plt.show()
-
-
-#All three values
-general.plot(subplots = True)
-
 
 ####################################################################################
 ##################### Non aggregated Analysis - Daily view #########################
 ####################################################################################
 
-## 1. Calcular número real de infectados usando a teoria do Buescu
+#Casos novos
+dfPT1['confirmados_novos'].plot()
+plt.title('Confirmados novos')
+#plt.xlabel('Data')
+plt.ylabel('Casos')
+plt.show()
 
-## Calcular taxa de crescimento e taxa de crescimento real
-
-# Projectar número de vitimas, UCI, ventiladores
+## Calcular taxa de crescimento
+dfPT1['novos casos rate'] = (dfPT1.confirmados_novos / dfPT1.shift(-1).confirmados)*100
+dfPT1['novos casos rate'].plot()
+plt.title('Taxa de crescimento')
+#plt.xlabel('Data')
+plt.ylabel('Taxa')
+plt.show()
 
 # Use world meter data to calculate number of new cases versus number of  tests
+PT_wm['new_tests'] = PT_wm.Total_tests - PT_wm.shift(-1).Total_tests
+PT_wm['new_tests'] = PT_wm['new_tests'].fillna(0)
+dfPT1['Total_tests'] = PT_wm.Total_tests
+dfPT1['Total_tests'] = dfPT1['Total_tests'].fillna(0)
+dfPT1['new_tests'] = PT_wm.new_tests
+dfPT1['new_tests'] = dfPT1['new_tests'].fillna(0)
+dfPT1['confirm tests rate'] = (dfPT1.confirmados_novos / dfPT1.new_tests)*100
+
+#Plot
+dfPT1[dfPT1['new_tests'] != 0]['confirm tests rate'].plot(style='.-')
+plt.title('Test positive rate')
+#plt.xlabel('Date')
+plt.ylabel('Rate')
+plt.tight_layout()
+
+
+## Analysis on the portuguese NHS workload / strain (SNS)
+#Face Value
+dfPT1['internados'].plot(legend=True,rot=70)
+dfPT1['internados_uci'].plot(legend=True, rot=70)
+plt.title('Casos internados e cuidados intensivos')
+plt.ylabel('Casos')
+plt.show()
+
+#Percentage
+#Hospitalized
+dfPT1['new internados'] = dfPT1.internados - dfPT1.shift(1).internados
+dfPT1['internados rates'] = (dfPT1['new internados'] / dfPT1.shift(1).internados)*100
+
+#Intensive care
+dfPT1['new UCI'] = dfPT1.internados_uci - dfPT1.shift(1).internados_uci
+dfPT1['UCI rates'] = (dfPT1['new UCI'] / dfPT1.shift(1).internados_uci)*100
+
+#Plot
+dfPT1['internados rates'].plot(legend = True)
+dfPT1['UCI rates'].plot(legend = True)
+plt.title('Internados e UCI rates')
+plt.ylabel('rate')
+plt.show()
+
+

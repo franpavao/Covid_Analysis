@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Covid_Import.py" beforeDir="false" afterPath="$PROJECT_DIR$/Covid_Import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PT_wm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/PT_wm.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portugal_Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portugal_Analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfPT1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT1.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfPT_agg.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT_agg.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,11 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="727" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1a8mtBNj4IwDUGvbnUI9kcglSyK" />
   <component name="ProjectViewState">
@@ -74,23 +75,44 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="WindowStateProjectService">
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586125978896">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.727@0.23.1280.727" timestamp="1586125978896" />
-    <state x="317" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1586126103826">
-      <screen x="0" y="23" width="1280" height="727" />
+    <state width="1259" height="162" key="GridCell.Tab.0.bottom" timestamp="1586266633432">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
+    <state width="1239" height="163" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1586252742968" />
+    <state width="1239" height="162" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1586266531607" />
+    <state width="1259" height="162" key="GridCell.Tab.0.center" timestamp="1586266633431">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586266633431" />
+    <state width="1239" height="163" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1586252742967" />
+    <state width="1239" height="162" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1586266531606" />
+    <state width="1259" height="162" key="GridCell.Tab.0.left" timestamp="1586266633430">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586266633430" />
+    <state width="1239" height="163" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1586252742967" />
+    <state width="1239" height="162" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1586266531605" />
+    <state width="1259" height="162" key="GridCell.Tab.0.right" timestamp="1586266633432">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="162" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
+    <state width="1239" height="163" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1586252742968" />
+    <state width="1239" height="162" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1586266531606" />
+    <state x="317" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1586252769089">
+      <screen x="0" y="23" width="1280" height="715" />
+    </state>
+    <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1586252769089" />
+    <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1586184111244" />
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1586126103826" />
+    <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586268448580">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.721@0.23.1280.721" timestamp="1586268448580" />
   </component>
 </project>

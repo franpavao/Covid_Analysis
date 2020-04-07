@@ -14,8 +14,8 @@ portugal = 'https://raw.githubusercontent.com/dssg-pt/covid19pt-data/master/data
 df = pd.read_csv(portugal)
 
 #Change the format of columns
-df.data = pd.to_datetime(df.data)
-df.data_dados = pd.to_datetime(df.data_dados)
+df.data = pd.to_datetime(df.data, dayfirst=True)
+df.data_dados = pd.to_datetime(df.data_dados, dayfirst=True)
 
 #Change NA values to 0
 
