@@ -88,13 +88,20 @@ dfPT1['new_tests'] = PT_wm.new_tests
 dfPT1['new_tests'] = dfPT1['new_tests'].fillna(0)
 dfPT1['confirm tests rate'] = (dfPT1.confirmados_novos / dfPT1.new_tests)*100
 
-#Plot
+#Total number of tests per day
+dfPT1[dfPT1['new_tests'] != 0]['new_tests'].plot(style='.-')
+plt.title('Number of tests per day')
+#plt.xlabel('Date')
+plt.tight_layout()
+plt.show()
+
+#Plot Rate of new cases per test
 dfPT1[dfPT1['new_tests'] != 0]['confirm tests rate'].plot(style='.-')
 plt.title('Test positive rate')
 #plt.xlabel('Date')
 plt.ylabel('Rate')
 plt.tight_layout()
-
+plt.show()
 
 ## Analysis on the portuguese NHS workload / strain (SNS)
 #Face Value
