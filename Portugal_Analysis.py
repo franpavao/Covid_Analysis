@@ -1,8 +1,7 @@
+#Import relevante packages
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
-pd.set_option('display.max_colwidth', -1)
 
 ### Read Pickle Files
 
@@ -105,8 +104,8 @@ plt.show()
 
 ## Analysis on the portuguese NHS workload / strain (SNS)
 #Face Value
-dfPT1['internados'].plot(legend=True,rot=70)
-dfPT1['internados_uci'].plot(legend=True, rot=70)
+dfPT1[['internados_uci','internados']].plot(legend=True,rot=70,kind='area',color=['r','y'])
+#dfPT1[].plot(legend=True, rot=70,kind='area')
 plt.title('Casos internados e cuidados intensivos')
 plt.ylabel('Casos')
 plt.show()
@@ -121,10 +120,16 @@ dfPT1['new UCI'] = dfPT1.internados_uci - dfPT1.shift(1).internados_uci
 dfPT1['UCI rates'] = (dfPT1['new UCI'] / dfPT1.shift(1).internados_uci)*100
 
 #Plot
-dfPT1['internados rates'].plot(legend = True)
-dfPT1['UCI rates'].plot(legend = True)
+dfPT1[['internados rates','UCI rates']].plot(legend = True, color=['y','r'])
 plt.title('Internados e UCI rates')
 plt.ylabel('rate')
 plt.show()
+
+
+#Casos activos recuperados e mortos
+dfPT1['Ativos']=dfPT1.confirmados-dfPT1.obitos-dfPT1.recuperados
+dfPT1[['recuperados','obitos','Ativos']].plot(kind='area',legend=True,color=['g','r','b'])
+plt.show()
+
 
 
