@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Portugal_Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portugal_Analysis.py" afterDir="false" />
-    </list>
+    <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586539596613</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20200410&#10;New graph for test rate">
+      <created>1586540208217</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586540208217</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -104,17 +109,18 @@
     <MESSAGE value="20200408&#10;Add an extra plot with the number of tests" />
     <MESSAGE value="20200409&#10;Change the style of the graphs. Add one extra graph" />
     <MESSAGE value="20200410&#10;Change the style of one graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200410&#10;Change the style of one graph" />
+    <MESSAGE value="20200410&#10;New graph for test rate" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200410&#10;New graph for test rate" />
   </component>
   <component name="WindowStateProjectService">
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586125978896">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.727@0.23.1280.727" timestamp="1586125978896" />
-    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1586539596392">
+    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1586540208011">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.721@0.23.1280.721" timestamp="1586539596392" />
+    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.721@0.23.1280.721" timestamp="1586540208011" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom" timestamp="1586539235923">
       <screen x="0" y="23" width="1280" height="716" />
     </state>
