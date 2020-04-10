@@ -97,7 +97,6 @@ plt.show()
 #Plot Rate of new cases per test
 dfPT1[dfPT1['new_tests'] != 0][['new tests rate','Total test rate']].plot(style='.-')
 plt.title('Test positive rate')
-#plt.xlabel('Date')
 plt.ylabel('Rate')
 plt.tight_layout()
 plt.show()
