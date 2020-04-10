@@ -85,7 +85,8 @@ dfPT1['Total_tests'] = PT_wm.Total_tests
 dfPT1['Total_tests'] = dfPT1['Total_tests'].fillna(0)
 dfPT1['new_tests'] = PT_wm.new_tests
 dfPT1['new_tests'] = dfPT1['new_tests'].fillna(0)
-dfPT1['confirm tests rate'] = (dfPT1.confirmados_novos / dfPT1.new_tests)*100
+dfPT1['new tests rate'] = (dfPT1.confirmados_novos / dfPT1.new_tests)*100
+dfPT1['Total test rate'] = (dfPT1.confirmados / dfPT1['Total_tests'])*100
 
 #Total number of tests per day
 dfPT1[dfPT1['new_tests'] != 0]['new_tests'].plot(style='.-')
@@ -94,7 +95,7 @@ plt.tight_layout()
 plt.show()
 
 #Plot Rate of new cases per test
-dfPT1[dfPT1['new_tests'] != 0]['confirm tests rate'].plot(style='.-')
+dfPT1[dfPT1['new_tests'] != 0][['new tests rate','Total test rate']].plot(style='.-')
 plt.title('Test positive rate')
 #plt.xlabel('Date')
 plt.ylabel('Rate')
