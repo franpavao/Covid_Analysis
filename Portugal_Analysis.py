@@ -71,8 +71,8 @@ plt.ylabel('Casos')
 plt.show()
 
 ## Calcular taxa de crescimento
-dfPT1['novos casos rate'] = (dfPT1.confirmados_novos / dfPT1.shift(-1).confirmados)*100
-dfPT1['novos casos rate'].plot()
+dfPT1['novos casos rate'] = dfPT1.confirmados.pct_change()*100
+dfPT1.loc['2020-03-15':,'novos casos rate'].plot()
 plt.title('Taxa de crescimento')
 #plt.xlabel('Data')
 plt.ylabel('Taxa')
@@ -90,7 +90,6 @@ dfPT1['confirm tests rate'] = (dfPT1.confirmados_novos / dfPT1.new_tests)*100
 #Total number of tests per day
 dfPT1[dfPT1['new_tests'] != 0]['new_tests'].plot(style='.-')
 plt.title('Number of tests per day')
-#plt.xlabel('Date')
 plt.tight_layout()
 plt.show()
 
@@ -113,11 +112,11 @@ plt.show()
 #Percentage
 #Hospitalized
 dfPT1['new internados'] = dfPT1.internados - dfPT1.shift(1).internados
-dfPT1['internados rates'] = (dfPT1['new internados'] / dfPT1.shift(1).internados)*100
+dfPT1['internados rates'] = dfPT1.internados.pct_change()*100
 
 #Intensive care
 dfPT1['new UCI'] = dfPT1.internados_uci - dfPT1.shift(1).internados_uci
-dfPT1['UCI rates'] = (dfPT1['new UCI'] / dfPT1.shift(1).internados_uci)*100
+dfPT1['UCI rates'] = dfPT1.internados_uci.pct_change()*100
 
 #Plot
 dfPT1[['internados rates','UCI rates']].plot(legend = True, color=['y','r'])
@@ -125,11 +124,10 @@ plt.title('Internados e UCI rates')
 plt.ylabel('rate')
 plt.show()
 
-
 #Casos activos recuperados e mortos
+dfPT1[['obitos','recuperados']].plot(color=['r','g'], title = 'Mortos e Recuperados')
+plt.show()
+
 dfPT1['Ativos']=dfPT1.confirmados-dfPT1.obitos-dfPT1.recuperados
 dfPT1[['recuperados','obitos','Ativos']].plot(kind='area',legend=True,color=['g','r','b'])
 plt.show()
-
-
-
