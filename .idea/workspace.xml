@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/International_Analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfInt.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Covid_Import.py" beforeDir="false" afterPath="$PROJECT_DIR$/Covid_Import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PT_wm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/PT_wm.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portugal_Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portugal_Analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfPT1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT1.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfPT_agg.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT_agg.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,9 +172,9 @@
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1586252769089" />
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1586539156909" />
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1586126103826" />
-    <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586540833259">
+    <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586626433076">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.721@0.23.1280.721" timestamp="1586540833259" />
+    <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.721@0.23.1280.721" timestamp="1586626433076" />
   </component>
 </project>
