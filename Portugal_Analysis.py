@@ -2,12 +2,20 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+from datetime import datetime
 
 ### Read Pickle Files
 
 dfPT_agg = pd.read_pickle('dfPT_agg.pkl')
 dfPT1 = pd.read_pickle('dfPT1.pkl')
 PT_wm = pd.read_pickle(r'PT_wm.pkl')
+
+#Set a new working directory
+hoje=datetime.today().strftime('%Y-%m-%d')
+caminho=os.getcwd()+'/Graphs/'+hoje
+if os.path.exists(caminho) == 0:
+    os.mkdir(caminho)
 
 ####################################################################################
 ##################### Aggregated Analysis - Age and gender #########################
@@ -44,19 +52,36 @@ print('Current death ration: ' + str((general.obitos.sum()/general.confirmados.s
 
 #Plot Results
 #Total number of confirmed and deceased per age group
-figure, axis = plt.subplots(nrows=2, ncols = 1)
-general.confirmados.plot(color='b',style='.-', legend = True, ax = axis[0], title = 'Confirmed and deceased cases per age group' )
-general[general.obitos!=0].obitos.plot(color='r',style='.-',legend=True, ax = axis[1], rot = 70)
-plt.xlabel('Age')
+plt.style.use('seaborn')
+plt.barh(general.index, general.confirmados, color='gray')
+plt.barh(general.index,general.obitos,color='red')
+plt.title('Infectados e óbitos')
+plt.legend(['Infectados','Óbitos'])
+plt.ylabel('Faixa etária')
+plt.xlabel('Número de casos')
+plt.savefig(caminho+'/'+'deceased_'+hoje+'jpg')
 plt.show()
+
 #plt.ylabel('Number of deceased')
 
 #Percentage of deceased per age group
-figure2,axis2 = plt.subplots(nrows = 3, ncols=1)
-general['%deceased'].plot(style='go',legend=True, ax = axis2[0], title='Percentage deceased per age group')
-gender.loc[(slice(None),'f'),'%deceased'].plot(style = 'r*', legend = False, ax=axis2[1], title = 'Women')
-gender.loc[(slice(None),'m'),'%deceased'].plot(style = 'cs', legend = False, ax=axis2[2], title = 'Men')
-plt.xlabel('Age')
+#Create Men and Women dataframe
+woman = gender.loc[pd.IndexSlice[:,'f'],:]
+woman.columns = ['confirmados', 'obitos', 'Women']
+woman = woman['Women']
+woman = woman.reset_index().set_index('age')['Women']
+man = gender.loc[pd.IndexSlice[:,'m'],:]
+man.columns = ['confirmados', 'obitos', 'Men']
+man = man['Men']
+man = man.reset_index().set_index('age')['Men']
+
+plt.style.use('seaborn')
+#To see all plot styles print(plt.style.available)
+pd.concat([general['%deceased'],woman,man],axis=1).plot(kind='bar',rot=0,color=['green','orange','blue'])
+plt.title('Rácio óbitos / infectados por faixa etária')
+plt.legend(['Total','Mulheres','Homens'])
+plt.xlabel('Faixa etária')
+plt.savefig(caminho+'/'+'deceased_gender_'+hoje+'jpg')
 plt.show()
 
 ####################################################################################
@@ -64,18 +89,21 @@ plt.show()
 ####################################################################################
 
 #Casos novos
-dfPT1['confirmados_novos'].plot()
-plt.title('Confirmados novos')
-#plt.xlabel('Data')
+plt.style.use('seaborn')
+plt.bar(dfPT1.index,dfPT1.confirmados_novos)
+plt.title('Novos infectados')
 plt.ylabel('Casos')
+plt.xlabel('Data')
+plt.savefig(caminho+'/'+'infectados'+hoje+'jpg')
 plt.show()
 
 ## Calcular taxa de crescimento
+plt.style.use('seaborn')
 dfPT1['novos casos rate'] = dfPT1.confirmados.pct_change()*100
-dfPT1.loc['2020-03-15':,'novos casos rate'].plot()
-plt.title('Taxa de crescimento')
-#plt.xlabel('Data')
-plt.ylabel('Taxa')
+dfPT1.loc['2020-03-15':,'novos casos rate'].plot(rot=70, title='Rácio de novos infectados \ total de infectados')
+plt.xlabel('Data')
+plt.ylabel('Rácio')
+plt.savefig(caminho+'/'+'Racio_infectados'+hoje+'jpg')
 plt.show()
 
 # Use world meter data to calculate number of new cases versus number of  tests
@@ -89,24 +117,36 @@ dfPT1['new tests rate'] = (dfPT1.confirmados_novos / dfPT1.new_tests)*100
 dfPT1['Total test rate'] = (dfPT1.confirmados / dfPT1['Total_tests'])*100
 
 #Total number of tests per day
-dfPT1[dfPT1['new_tests'] != 0]['new_tests'].plot(style='.-')
-plt.title('Number of tests per day')
+plt.style.use('seaborn')
+#To see all plot styles print(plt.style.available)
+dfPT1.loc['2020-04-04':,'new_tests'].plot(style='.-',rot=70,title='Número de testes por dia')
+plt.ylabel('Número de testes')
+plt.xlabel('Data')
 plt.tight_layout()
+plt.savefig(caminho+'/'+'Testes'+hoje+'jpg')
 plt.show()
 
 #Plot Rate of new cases per test
-dfPT1[dfPT1['new_tests'] != 0][['new tests rate','Total test rate']].plot(style='.-')
-plt.title('Test positive rate')
-plt.ylabel('Rate')
+plt.style.use('seaborn')
+dfPT1.loc['2020-04-04':,['new tests rate','Total test rate']].plot(style='.-',rot=70,title='Rácio de infectados / Número de testes')
+plt.ylabel('Rácio')
+plt.xlabel('Data')
+plt.legend(['Rácio diário','Rácio total infectados/testes'])
 plt.tight_layout()
+plt.savefig(caminho+'/'+'Racio_testes'+hoje+'jpg')
 plt.show()
 
 ## Analysis on the portuguese NHS workload / strain (SNS)
 #Face Value
+plt.style.use('seaborn')
 dfPT1[['internados_uci','internados']].plot(legend=True,rot=70,kind='area',color=['r','y'])
 #dfPT1[].plot(legend=True, rot=70,kind='area')
 plt.title('Casos internados e cuidados intensivos')
 plt.ylabel('Casos')
+plt.xlabel('Data')
+plt.title('Casos Internados e em cuidados intensivos')
+plt.legend(['Cuidados Intensivos','Internados'])
+plt.savefig(caminho+'/'+'Internados e UCI'+hoje+'jpg')
 plt.show()
 
 #Percentage
@@ -122,20 +162,33 @@ dfPT1['UCI rates'] = dfPT1.internados_uci.pct_change()*100
 dfPT1['rate internados em UCI'] = (dfPT1.internados_uci / dfPT1.internados)*100
 
 #Plot
-dfPT1[['internados rates','UCI rates']].plot(legend = True, color=['y','r'])
-plt.title('Internados e UCI rates')
-plt.ylabel('rate')
-plt.show()
+## Not relevant
+#dfPT1[['internados rates','UCI rates']].plot(legend = True, color=['y','r'])
+#plt.title('Internados e UCI rates')
+#plt.ylabel('rate')
+#plt.show()
 
 #UCI rate plot
-dfPT1['rate internados em UCI'].plot(legend=True)
-plt.title('Percentagem de internados em UCI')
+dfPT1['rate internados em UCI'].plot(legend=False, rot=70)
+plt.title('Rácio cuidados intensivos / internados')
+plt.ylabel('Rácio')
+plt.xlabel('Data')
+plt.savefig(caminho+'/'+'Racio UCI'+hoje+'jpg')
 plt.show()
 
 #Casos activos recuperados e mortos
-dfPT1[['obitos','recuperados']].plot(color=['r','g'], title = 'Mortos e Recuperados')
+dfPT1[['obitos','recuperados']].plot(color=['r','g'], rot=70, title='Recuperados e Óbitos')
+plt.legend(['Óbitos','Recuperados'])
+plt.xlabel('Data')
+plt.ylabel('Casos')
+plt.savefig(caminho+'/'+'Recuperados_Obitos'+hoje+'jpg')
 plt.show()
 
+#Casos Activos
 dfPT1['Ativos']=dfPT1.confirmados-dfPT1.obitos-dfPT1.recuperados
-dfPT1[['recuperados','obitos','Ativos']].plot(kind='area',legend=True,color=['g','r','b'])
+dfPT1[['recuperados','obitos','Ativos']].plot(kind='area',color=['g','r','b'],title='Ativos, recuperados e óbitos',rot=70)
+plt.legend(['Recuperados','Óbitos','Ativos'])
+plt.xlabel('Data')
+plt.ylabel('Casos')
+plt.savefig(caminho+'/'+'Ativos'+hoje+'jpg')
 plt.show()
