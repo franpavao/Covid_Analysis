@@ -161,13 +161,6 @@ dfPT1['UCI rates'] = dfPT1.internados_uci.pct_change()*100
 # Hospitalized and in intensive care
 dfPT1['rate internados em UCI'] = (dfPT1.internados_uci / dfPT1.internados)*100
 
-#Plot
-## Not relevant
-#dfPT1[['internados rates','UCI rates']].plot(legend = True, color=['y','r'])
-#plt.title('Internados e UCI rates')
-#plt.ylabel('rate')
-#plt.show()
-
 #UCI rate plot
 dfPT1['rate internados em UCI'].plot(legend=False, rot=70)
 plt.title('Rácio cuidados intensivos / internados')

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="20200411&#10;Remove extract for international data">
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/Ativos2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/Internados e UCI2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/Racio UCI2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/Racio_infectados2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/Racio_testes2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/Testes2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/deceased_2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/deceased_gender_2020-04-13jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-13/infectados2020-04-13jpg.png" afterDir="false" />
+    <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Ativos2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Internados e UCI2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Racio UCI2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Racio_infectados2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Racio_testes2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Recuperados_Obitos2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Testes2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/deceased_2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/deceased_gender_2020-04-14jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/infectados2020-04-14jpg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PT_wm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/PT_wm.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portugal_Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portugal_Analysis.py" afterDir="false" />
@@ -42,6 +43,7 @@
   </component>
   <component name="ProjectId" id="1a8mtBNj4IwDUGvbnUI9kcglSyK" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -160,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586626467414</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="20200413&#10;Save Graphs">
+      <created>1586796102638</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586796102638</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -171,7 +180,8 @@
     <MESSAGE value="20200410&#10;Change the style of one graph" />
     <MESSAGE value="20200410&#10;New graph for test rate" />
     <MESSAGE value="20200411&#10;Remove extract for international data" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200411&#10;Remove extract for international data" />
+    <MESSAGE value="20200413&#10;Save Graphs" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200413&#10;Save Graphs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586125978896">
@@ -182,40 +192,45 @@
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.721@0.23.1280.721" timestamp="1586796102268" />
-    <state width="1239" height="123" key="GridCell.Tab.0.bottom" timestamp="1586790132667">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1239" height="123" key="GridCell.Tab.0.bottom" timestamp="1586878284197">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1586706350923" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1586790132667" />
-    <state width="1239" height="123" key="GridCell.Tab.0.center" timestamp="1586790132666">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1586878284197" />
+    <state width="1239" height="123" key="GridCell.Tab.0.center" timestamp="1586878284196">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586266633431" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1586706350922" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="123" key="GridCell.Tab.0.left" timestamp="1586790132666">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1586878284196" />
+    <state width="1239" height="123" key="GridCell.Tab.0.left" timestamp="1586878284195">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586266633430" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1586706350921" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="123" key="GridCell.Tab.0.right" timestamp="1586790132666">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1586878284195" />
+    <state width="1239" height="123" key="GridCell.Tab.0.right" timestamp="1586878284196">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1586706350923" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
+    <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1586878284196" />
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1586686171976">
       <screen x="0" y="23" width="1280" height="716" />
     </state>
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1586252769089" />
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1586686171976" />
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1586126103826" />
-    <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586796080911">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="423" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586878566353">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="423" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.721@0.23.1280.721" timestamp="1586796080911" />
+    <state x="423" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.724@0.23.1280.724" timestamp="1586878566353" />
     <state x="301" y="68" width="670" height="676" key="search.everywhere.popup" timestamp="1586795075528">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
