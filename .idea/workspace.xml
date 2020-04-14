@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Ativos2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Internados e UCI2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Racio UCI2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Racio_infectados2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Racio_testes2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Recuperados_Obitos2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/Testes2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/deceased_2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/deceased_gender_2020-04-14jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-14/infectados2020-04-14jpg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PT_wm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/PT_wm.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portugal_Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portugal_Analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfPT1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT1.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfPT_agg.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT_agg.pkl" afterDir="false" />
-    </list>
+    <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586796102638</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="20200414">
+      <created>1586878583121</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586878583121</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,7 +172,8 @@
     <MESSAGE value="20200410&#10;New graph for test rate" />
     <MESSAGE value="20200411&#10;Remove extract for international data" />
     <MESSAGE value="20200413&#10;Save Graphs" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200413&#10;Save Graphs" />
+    <MESSAGE value="20200414" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200414" />
   </component>
   <component name="WindowStateProjectService">
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586125978896">
