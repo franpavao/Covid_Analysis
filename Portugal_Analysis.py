@@ -41,7 +41,6 @@ def melt_cleanse(df):
     return pivot_gender, pivot_general
 
 #Run melt function on imported data
-
 gender, general = melt_cleanse(dfPT_agg)
 
 print(general)
@@ -112,6 +111,7 @@ PT_wm['new_tests'] = PT_wm['new_tests'].fillna(0)
 dfPT1['Total_tests'] = PT_wm.Total_tests
 dfPT1['Total_tests'] = dfPT1['Total_tests'].fillna(0)
 dfPT1['new_tests'] = PT_wm.new_tests
+dfPT1['new_tests'] = dfPT1['new_tests'].apply(lambda a: (abs(a)+a)/2 )
 dfPT1['new_tests'] = dfPT1['new_tests'].fillna(0)
 dfPT1['new tests rate'] = (dfPT1.confirmados_novos / dfPT1.new_tests)*100
 dfPT1['Total test rate'] = (dfPT1.confirmados / dfPT1['Total_tests'])*100
@@ -119,7 +119,8 @@ dfPT1['Total test rate'] = (dfPT1.confirmados / dfPT1['Total_tests'])*100
 #Total number of tests per day
 plt.style.use('seaborn')
 #To see all plot styles print(plt.style.available)
-dfPT1.loc['2020-04-04':,'new_tests'].plot(style='.-',rot=70,title='Número de testes por dia')
+dfPT1.loc['2020-04-04':,'Total_tests'].plot(kind='bar',color='blue',rot=0,title='Número de testes por dia')
+dfPT1.loc['2020-04-04':,'new_tests'].plot(kind='bar',color='brown',rot=0,title='Número de testes por dia')
 plt.ylabel('Número de testes')
 plt.xlabel('Data')
 plt.tight_layout()
@@ -140,7 +141,6 @@ plt.show()
 #Face Value
 plt.style.use('seaborn')
 dfPT1[['internados_uci','internados']].plot(legend=True,rot=70,kind='area',color=['r','y'])
-#dfPT1[].plot(legend=True, rot=70,kind='area')
 plt.title('Casos internados e cuidados intensivos')
 plt.ylabel('Casos')
 plt.xlabel('Data')
