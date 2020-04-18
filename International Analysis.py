@@ -33,4 +33,6 @@ country_dr = PT_SW.groupby('countriesAndTerritories').death_pop.max().sort_value
 exclude = ['Cases_on_an_international_conveyance_Japan','San_Marino','Andorra','Sint_Maarten','Guernsey','Gibraltar','Jersey','Monaco','Bermuda']
 country_dr[~country_dr.index.isin(exclude)].head(15).plot(kind='bar',color='r',alpha=0.7,rot=70)
 plt.savefig(caminho+'/'+'Internacional'+hoje+'jpg')
+plt.title('Ranking de países em termos de mortos por milhão de habitante')
+plt.ylabel('Mortos por milhão de habitante')
 plt.show()
