@@ -29,10 +29,12 @@ PT_SW['cases_pop'] = PT_SW.Total_cases / (PT_SW.popData2018/1000000)
 PT_SW['death_pop'] = PT_SW.Total_deaths / (PT_SW.popData2018/1000000)
 
 #Get the max (latest), exclude small coutries and plot
-country_dr = PT_SW.groupby('countriesAndTerritories').death_pop.max().sort_values(ascending=False).dropna()
+country_dr = PT_SW.groupby('countriesAndTerritories').death_pop.max().sort_values(ascending=True).dropna()
 exclude = ['Cases_on_an_international_conveyance_Japan','San_Marino','Andorra','Sint_Maarten','Guernsey','Gibraltar','Jersey','Monaco','Bermuda']
-country_dr[~country_dr.index.isin(exclude)].head(15).plot(kind='bar',color='r',alpha=0.7,rot=70)
-plt.savefig(caminho+'/'+'Internacional'+hoje+'jpg')
+plt.style.use('seaborn')
+country_dr[~country_dr.index.isin(exclude)].tail(15).plot(kind='barh',color='r',alpha=0.7)
 plt.title('Ranking de países em termos de mortos por milhão de habitante')
-plt.ylabel('Mortos por milhão de habitante')
+plt.xlabel('Mortos por milhão de habitante')
+plt.ylabel('')
+plt.savefig(caminho+'/'+'Internacional'+hoje+'jpg')
 plt.show()
