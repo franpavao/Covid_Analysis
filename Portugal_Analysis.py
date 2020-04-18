@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from datetime import datetime
+import matplotlib.ticker as ticker
+
 
 ### Read Pickle Files
 
@@ -43,6 +45,9 @@ def melt_cleanse(df):
 #Run melt function on imported data
 gender, general = melt_cleanse(dfPT_agg)
 
+general['%deceased_total'] = (general.obitos / general.obitos.sum())*100
+gender['%deceased_total'] = (gender.obitos / gender.obitos.sum())*100
+
 print(general)
 print(gender)
 
@@ -61,16 +66,22 @@ plt.xlabel('Número de casos')
 plt.savefig(caminho+'/'+'deceased_'+hoje+'jpg')
 plt.show()
 
-#plt.ylabel('Number of deceased')
+#Obitos por faixa etária
+bola = general[general.obitos!=0][['obitos','%deceased_total']]
+explode = (0, 0, 0, 0, 0.05)
+plt.pie(bola.obitos, explode=explode,labels=bola.index,autopct='%1.1f%%')
+plt.title('Percentagem de mortos por faixa etária')
+plt.savefig(caminho+'/'+'Percentagem_mortos_total'+hoje+'jpg')
+plt.show()
 
 #Percentage of deceased per age group
 #Create Men and Women dataframe
 woman = gender.loc[pd.IndexSlice[:,'f'],:]
-woman.columns = ['confirmados', 'obitos', 'Women']
+woman.columns = ['confirmados', 'obitos', 'Women', '%deceased_total']
 woman = woman['Women']
 woman = woman.reset_index().set_index('age')['Women']
 man = gender.loc[pd.IndexSlice[:,'m'],:]
-man.columns = ['confirmados', 'obitos', 'Men']
+man.columns = ['confirmados', 'obitos', 'Men', '%deceased_total']
 man = man['Men']
 man = man.reset_index().set_index('age')['Men']
 
@@ -118,12 +129,16 @@ dfPT1['Total test rate'] = (dfPT1.confirmados / dfPT1['Total_tests'])*100
 
 #Total number of tests per day
 plt.style.use('seaborn')
+#Fix the xlabel issue
+ticklabels = ['']*len(dfPT1.loc['2020-04-04':].index)
+# Every 4th ticklable shows the month and day
+ticklabels[::4] = [item.strftime('%b %d') for item in dfPT1.loc['2020-04-04':].index[::4]]
 #To see all plot styles print(plt.style.available)
-dfPT1.loc['2020-04-04':,'Total_tests'].plot(kind='bar',color='blue',rot=0,title='Número de testes por dia')
-dfPT1.loc['2020-04-04':,'new_tests'].plot(kind='bar',color='brown',rot=0,title='Número de testes por dia')
+dfPT1.loc['2020-04-04':,'Total_tests'].plot(kind='bar',color='blue',rot=0,title='Número de testes por dia',alpha=0.5).xaxis.set_major_formatter(ticker.FixedFormatter(ticklabels))
+dfPT1.loc['2020-04-04':,'new_tests'].plot(kind='bar',color='brown',rot=0,title='Número de testes por dia').xaxis.set_major_formatter(ticker.FixedFormatter(ticklabels))
 plt.ylabel('Número de testes')
 plt.xlabel('Data')
-plt.tight_layout()
+plt.legend(['Total de testes','Testes novos'])
 plt.savefig(caminho+'/'+'Testes'+hoje+'jpg')
 plt.show()
 
@@ -179,7 +194,7 @@ plt.show()
 
 #Casos Activos
 dfPT1['Ativos']=dfPT1.confirmados-dfPT1.obitos-dfPT1.recuperados
-dfPT1[['recuperados','obitos','Ativos']].plot(kind='area',color=['g','r','b'],title='Ativos, recuperados e óbitos',rot=70)
+dfPT1[['recuperados','obitos','Ativos']].plot(kind='area',color=['g','r','b'],title='Ativos, recuperados e óbitos',rot=70,alpha=0.7)
 plt.legend(['Recuperados','Óbitos','Ativos'])
 plt.xlabel('Data')
 plt.ylabel('Casos')

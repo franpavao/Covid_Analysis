@@ -114,9 +114,9 @@ PT_wm.to_pickle('PT_wm.pkl')
 # Extract data from the website
 #save url. Save it as data frame
 ## This Data is different from the Worldometer data - at least for the UK
-#csv_url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv'
-#dfInt = pd.read_csv(csv_url, sep = ',', encoding='latin-1') #2. To a dataframe
-#today = date.today()
+csv_url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv'
+dfInt = pd.read_csv(csv_url, sep = ',', encoding='latin-1') #2. To a dataframe
+today = date.today()
 
 #Save International file in a Pickle
-#dfInt.to_pickle('dfInt.pkl')
+dfInt.to_pickle('dfInt.pkl')
