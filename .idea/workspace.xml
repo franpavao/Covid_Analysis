@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Ativos2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Internacional2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Internados e UCI2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Percentagem_mortos_total2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Racio UCI2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Racio_infectados2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Racio_testes2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Recuperados_Obitos2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/Testes2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/deceased_2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/deceased_gender_2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-19/infectados2020-04-19jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Ativos2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Internacional2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Internados e UCI2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Percentagem_mortos_total2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Racio UCI2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Racio_infectados2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Racio_testes2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Recuperados_Obitos2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/Testes2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/deceased_2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/deceased_gender_2020-04-20jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-20/infectados2020-04-20jpg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/International Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/International Analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PT_wm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/PT_wm.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dfInt.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfInt.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dfPT1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT1.pkl" afterDir="false" />
@@ -52,7 +77,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.International Analysis">
     <configuration name="Covid_Import" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Covid_Analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,8 +99,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="International Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Covid_Analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/International Analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Portugal_Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Covid_Analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Portugal_Analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.International Analysis" />
+        <item itemvalue="Python.Portugal_Analysis" />
         <item itemvalue="Python.Covid_Import" />
       </list>
     </recent_temporary>
@@ -194,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587239892000</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="20200419">
+      <created>1587314646279</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587314646279</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -209,7 +285,8 @@
     <MESSAGE value="20200414" />
     <MESSAGE value="20200417" />
     <MESSAGE value="20200418&#10;International analysis&#10;more graphs and xlabels fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200418&#10;International analysis&#10;more graphs and xlabels fixed" />
+    <MESSAGE value="20200419" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200419" />
   </component>
   <component name="WindowStateProjectService">
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587240156543">
@@ -217,59 +294,59 @@
     </state>
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.724@0.23.1280.724" timestamp="1587240156543" />
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.727@0.23.1280.727" timestamp="1586125978896" />
-    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1587314632636">
+    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1587314645983">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.721@0.23.1280.721" timestamp="1586796102268" />
-    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1587314632636" />
+    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1587314645983" />
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1587226939730" />
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1587133039347" />
-    <state width="1239" height="123" key="GridCell.Tab.0.bottom" timestamp="1587314229401">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1239" height="123" key="GridCell.Tab.0.bottom" timestamp="1587402112360">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1586706350923" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1586790132667" />
-    <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1586963903081" />
-    <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1587314229401" />
+    <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1587402112360" />
+    <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1587314653498" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1587223112148" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1587132618821" />
-    <state width="1239" height="123" key="GridCell.Tab.0.center" timestamp="1587314229400">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1239" height="123" key="GridCell.Tab.0.center" timestamp="1587402112359">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586266633431" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1586706350922" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1586963903080" />
-    <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1587314229400" />
+    <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1587402112359" />
+    <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1587314653497" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1587223112147" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1587132618820" />
-    <state width="1239" height="123" key="GridCell.Tab.0.left" timestamp="1587314229399">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1239" height="123" key="GridCell.Tab.0.left" timestamp="1587402112359">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586266633430" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1586706350921" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1586963903079" />
-    <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1587314229399" />
+    <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1587402112359" />
+    <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1587314653497" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1587223112147" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1587132618820" />
-    <state width="1239" height="123" key="GridCell.Tab.0.right" timestamp="1587314229400">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1239" height="123" key="GridCell.Tab.0.right" timestamp="1587402112359">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1586706350923" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1586963903080" />
-    <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1587314229400" />
+    <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1587402112359" />
+    <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1587314653497" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1587223112147" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1587132618821" />
-    <state x="317" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1587314188131">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state x="317" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1587401679970">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1586252769089" />
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1586686171976" />
-    <state x="317" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.723@0.23.1280.723" timestamp="1587227508376" />
+    <state x="317" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.723@0.23.1280.723" timestamp="1587401679970" />
     <state x="317" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.724@0.23.1280.724" timestamp="1587314188131" />
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1586126103826" />
     <state x="423" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586878566353">
