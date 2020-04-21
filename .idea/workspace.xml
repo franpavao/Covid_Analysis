@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Ativos2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Internacional2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Internados e UCI2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Percentagem_mortos_total2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Racio UCI2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Racio_infectados2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Racio_testes2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Recuperados_Obitos2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Testes2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/deceased_2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/deceased_gender_2020-04-21jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-21/infectados2020-04-21jpg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PT_wm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/PT_wm.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfInt.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfInt.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfPT1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT1.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfPT_agg.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT_agg.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/2020-04-21/Internacional2020-04-21jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs/2020-04-21/Internacional2020-04-21jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/International Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/International Analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587403652611</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="20200421">
+      <created>1587481721358</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1587481721358</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -281,7 +274,8 @@
     <MESSAGE value="20200418&#10;International analysis&#10;more graphs and xlabels fixed" />
     <MESSAGE value="20200419" />
     <MESSAGE value="20200420" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200420" />
+    <MESSAGE value="20200421" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200421" />
   </component>
   <component name="WindowStateProjectService">
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587240156543">
@@ -289,11 +283,11 @@
     </state>
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.724@0.23.1280.724" timestamp="1587240156543" />
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.727@0.23.1280.727" timestamp="1586125978896" />
-    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1587403652341">
+    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1587481721099">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.721@0.23.1280.721" timestamp="1586796102268" />
-    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1587403652341" />
+    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1587481721099" />
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1587226939730" />
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1587133039347" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom" timestamp="1587481320318">
