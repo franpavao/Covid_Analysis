@@ -15,9 +15,9 @@ if os.path.exists(caminho) == 0:
 
 #Change the name of some countries
 def change_name(x):
-    if x =='United_States_of_America':
+    if x in ['United_States_of_America','Bahamas','Northern_Mariana_Islands']:
         return 'USA'
-    elif x in ['United_Kingdom','Guernsey','Gibraltar','Jersey','Isle_of_Man','Bermuda']:
+    elif x in ['United_Kingdom','Guernsey','Gibraltar','Jersey','Isle_of_Man','Bermuda','British_Virgin_Islands']:
         return 'UK'
     elif x in ['France','Monaco','Sint_Maarten']:
         return 'France'
@@ -42,7 +42,7 @@ PT_SW.countriesAndTerritories = PT_SW.countriesAndTerritories.apply(change_name)
 PT_SW = PT_SW[['countriesAndTerritories','Total_cases','Total_deaths','popData2018']]
 PT_SW = PT_SW[PT_SW.index == PT_SW.index.max()]
 
-#Get the max (latest), exclude small coutries and plot
+#Deceased by population
 country_dr = PT_SW.groupby(by='countriesAndTerritories')[['Total_cases','Total_deaths','popData2018']].sum().dropna()
 country_dr['cases_pop'] = country_dr.Total_cases / (country_dr.popData2018/1000000)
 country_dr['death_pop'] = country_dr.Total_deaths / (country_dr.popData2018/1000000)
@@ -54,4 +54,16 @@ plt.title('Ranking de países em termos de mortos por milhão de habitante')
 plt.xlabel('Mortos por milhão de habitante')
 plt.ylabel('')
 plt.savefig(caminho+'/'+'Internacional'+hoje+'jpg')
+plt.show()
+
+#Deceased by infected
+country_dr['death_inf'] = (country_dr.Total_deaths / country_dr.Total_cases)*100
+country_dr = country_dr.dropna()
+country_dr = country_dr.sort_values('death_inf', ascending=True)
+plt.style.use('seaborn')
+country_dr.death_inf.tail(20).plot(kind='barh',color='r',alpha=0.7)
+plt.title('Ranking de países em termos de mortos por número de infectados')
+plt.xlabel('Percentagem de mortos por infectados')
+plt.ylabel('')
+plt.savefig(caminho+'/'+'Internacional_deathInf'+hoje+'jpg')
 plt.show()

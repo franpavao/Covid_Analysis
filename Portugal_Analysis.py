@@ -194,8 +194,8 @@ plt.show()
 
 #Casos Activos
 dfPT1['Ativos']=dfPT1.confirmados-dfPT1.obitos-dfPT1.recuperados
-dfPT1[['recuperados','obitos','Ativos']].plot(kind='area',color=['g','r','b'],title='Ativos, recuperados e óbitos',rot=70,alpha=0.7)
-plt.legend(['Recuperados','Óbitos','Ativos'])
+dfPT1[['obitos','recuperados','Ativos']].plot(kind='area',color=['r','g','b'],title='Ativos, recuperados e óbitos',rot=70,alpha=0.7)
+plt.legend(['Óbitos','Recuperados','Ativos'])
 plt.xlabel('Data')
 plt.ylabel('Casos')
 plt.savefig(caminho+'/'+'Ativos'+hoje+'jpg')
