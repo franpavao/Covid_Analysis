@@ -13,25 +13,16 @@ caminho=os.getcwd()+'/Graphs/'+hoje
 if os.path.exists(caminho) == 0:
     os.mkdir(caminho)
 
-#Change the name of some countries
-def change_name(x):
-    if x in ['United_States_of_America','Bahamas','Northern_Mariana_Islands']:
-        return 'USA'
-    elif x in ['United_Kingdom','Guernsey','Gibraltar','Jersey','Isle_of_Man','Bermuda','British_Virgin_Islands']:
-        return 'UK'
-    elif x in ['France','Monaco','Sint_Maarten']:
-        return 'France'
-    elif x in ['Italy','San_Marino']:
-        return 'Italy'
-    elif x in ['Japan','Cases_on_an_international_conveyance_Japan']:
-        return 'Japan'
-    elif x in ['Spain','Andorra']:
-        return 'Spain'
-    else:
-        return x
-
 #Create a copy of the dataframe
 PT_SW =dfInt.copy()
+
+#Reallocate some countries using replace
+PT_SW.countriesAndTerritories.replace(['Guernsey','Gibraltar','Jersey','Isle_of_Man','Bermuda','British_Virgin_Islands','United_Kingdom'],'UK',inplace=True)
+PT_SW.countriesAndTerritories.replace(['United_States_of_America','Bahamas','Northern_Mariana_Islands'],'USA',inplace=True)
+PT_SW.countriesAndTerritories.replace(['Monaco','Sint_Maarten'],'France',inplace=True)
+PT_SW.countriesAndTerritories.replace('San_Marino','Italy',inplace=True)
+PT_SW.countriesAndTerritories.replace('Andorra','Spain',inplace=True)
+
 #Set date as index and create number of death per 1M inhabitants
 PT_SW.dateRep = pd.to_datetime(PT_SW.dateRep,dayfirst=True)
 PT_SW.set_index('dateRep',inplace=True)
