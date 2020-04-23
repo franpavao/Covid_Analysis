@@ -23,11 +23,11 @@ PT_SW=PT_SW.sort_index()
 PT_SW['Total_deaths']=PT_SW.groupby('countriesAndTerritories').deaths.transform('cumsum')
 PT_SW['Total_cases']=PT_SW.groupby('countriesAndTerritories').cases.transform('cumsum')
 #Reallocate some countries using replace
-PT_SW.countriesAndTerritories.replace(['Guernsey','Gibraltar','Jersey','Isle_of_Man','Bermuda','British_Virgin_Islands','United_Kingdom'],'UK',inplace=True)
-PT_SW.countriesAndTerritories.replace(['United_States_of_America','Bahamas','Northern_Mariana_Islands'],'USA',inplace=True)
-PT_SW.countriesAndTerritories.replace(['Monaco','Sint_Maarten'],'France',inplace=True)
-PT_SW.countriesAndTerritories.replace('San_Marino','Italy',inplace=True)
-PT_SW.countriesAndTerritories.replace('Andorra','Spain',inplace=True)
+PT_SW.countriesAndTerritories.replace({'Andorra':'Spain'
+                                          ,'San_Marino':'Italy'
+                                          ,'Monaco':'France','Sint_Maarten':'France'
+                                          ,'Guernsey':'UK','Gibraltar':'UK','Jersey':'UK','Isle_of_Man':'UK','Bermuda':'UK','British_Virgin_Islands':'UK','United_Kingdom':'UK'
+                                          ,'United_States_of_America':'USA','Bahamas':'USA','Northern_Mariana_Islands':'USA'},inplace=True)
 #Select relevant columns
 PT_SW = PT_SW[['countriesAndTerritories','Total_cases','Total_deaths','popData2018']]
 PT_SW = PT_SW[PT_SW.index == PT_SW.index.max()]
