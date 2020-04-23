@@ -16,20 +16,19 @@ if os.path.exists(caminho) == 0:
 #Create a copy of the dataframe
 PT_SW =dfInt.copy()
 
-#Reallocate some countries using replace
-PT_SW.countriesAndTerritories.replace(['Guernsey','Gibraltar','Jersey','Isle_of_Man','Bermuda','British_Virgin_Islands','United_Kingdom'],'UK',inplace=True)
-PT_SW.countriesAndTerritories.replace(['United_States_of_America','Bahamas','Northern_Mariana_Islands'],'USA',inplace=True)
-PT_SW.countriesAndTerritories.replace(['Monaco','Sint_Maarten'],'France',inplace=True)
-PT_SW.countriesAndTerritories.replace('San_Marino','Italy',inplace=True)
-PT_SW.countriesAndTerritories.replace('Andorra','Spain',inplace=True)
-
 #Set date as index and create number of death per 1M inhabitants
 PT_SW.dateRep = pd.to_datetime(PT_SW.dateRep,dayfirst=True)
 PT_SW.set_index('dateRep',inplace=True)
 PT_SW=PT_SW.sort_index()
 PT_SW['Total_deaths']=PT_SW.groupby('countriesAndTerritories').deaths.transform('cumsum')
 PT_SW['Total_cases']=PT_SW.groupby('countriesAndTerritories').cases.transform('cumsum')
-PT_SW.countriesAndTerritories = PT_SW.countriesAndTerritories.apply(change_name)
+#Reallocate some countries using replace
+PT_SW.countriesAndTerritories.replace(['Guernsey','Gibraltar','Jersey','Isle_of_Man','Bermuda','British_Virgin_Islands','United_Kingdom'],'UK',inplace=True)
+PT_SW.countriesAndTerritories.replace(['United_States_of_America','Bahamas','Northern_Mariana_Islands'],'USA',inplace=True)
+PT_SW.countriesAndTerritories.replace(['Monaco','Sint_Maarten'],'France',inplace=True)
+PT_SW.countriesAndTerritories.replace('San_Marino','Italy',inplace=True)
+PT_SW.countriesAndTerritories.replace('Andorra','Spain',inplace=True)
+#Select relevant columns
 PT_SW = PT_SW[['countriesAndTerritories','Total_cases','Total_deaths','popData2018']]
 PT_SW = PT_SW[PT_SW.index == PT_SW.index.max()]
 
