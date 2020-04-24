@@ -45,14 +45,14 @@ def melt_cleanse(df):
 #Run melt function on imported data
 gender, general = melt_cleanse(dfPT_agg)
 
-general['%deceased_total'] = (general.obitos / general.obitos.sum())*100
-gender['%deceased_total'] = (gender.obitos / gender.obitos.sum())*100
+general['%deceased_total'] = (general.obitos / general.obitos.values.sum())*100
+gender['%deceased_total'] = (gender.obitos / gender.obitos.values.sum())*100
 
 print(general)
 print(gender)
 
 #Print current death ration
-print('Current death ration: ' + str((general.obitos.sum()/general.confirmados.sum())*100) + '%')
+print('Current death ration: ' + str((general.obitos.values.sum()/general.confirmados.values.sum())*100) + '%')
 
 #Plot Results
 #Total number of confirmed and deceased per age group
