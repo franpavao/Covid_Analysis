@@ -26,7 +26,7 @@ PT_SW['Total_cases']=PT_SW.groupby('countriesAndTerritories').cases.transform('c
 PT_SW.countriesAndTerritories.replace({'Andorra':'Spain'
                                           ,'San_Marino':'Italy'
                                           ,'Monaco':'France','Sint_Maarten':'France'
-                                          ,'Guernsey':'UK','Gibraltar':'UK','Jersey':'UK','Isle_of_Man':'UK','Bermuda':'UK','British_Virgin_Islands':'UK','United_Kingdom':'UK'
+                                          ,'Montserrat':'UK','Guernsey':'UK','Gibraltar':'UK','Jersey':'UK','Isle_of_Man':'UK','Bermuda':'UK','British_Virgin_Islands':'UK','United_Kingdom':'UK'
                                           ,'United_States_of_America':'USA','Bahamas':'USA','Northern_Mariana_Islands':'USA'},inplace=True)
 #Select relevant columns
 PT_SW = PT_SW[['countriesAndTerritories','Total_cases','Total_deaths','popData2018']]
@@ -51,7 +51,7 @@ country_dr['death_inf'] = (country_dr.Total_deaths / country_dr.Total_cases)*100
 country_dr = country_dr.dropna()
 country_dr = country_dr.sort_values('death_inf', ascending=True)
 plt.style.use('seaborn')
-country_dr.death_inf.tail(20).plot(kind='barh',color='r',alpha=0.7)
+country_dr.death_inf.tail(15).plot(kind='barh',color='r',alpha=0.7)
 plt.title('Ranking de países em termos de mortos por número de infectados')
 plt.xlabel('Percentagem de mortos por infectados')
 plt.ylabel('')

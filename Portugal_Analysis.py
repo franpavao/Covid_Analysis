@@ -99,13 +99,23 @@ plt.show()
 ####################################################################################
 
 #Casos novos
+#7 day avg
+def func(x):
+    return (x.shift(1)+x.shift(2)+x.shift(3)+x.shift(4)+x.shift(5)+x.shift(6)+x)/7
+dfPT1['7avg'] = func(dfPT1.confirmados_novos)
+#Graph
 plt.style.use('seaborn')
+#_, ax = plt.subplots()
 plt.bar(dfPT1.index,dfPT1.confirmados_novos)
+#dfPT1.confirmados_novos.plot(kind='bar')
+#dfPT1['7avg'].plot(secondary_y=True)
 plt.title('Novos infectados')
 plt.ylabel('Casos')
 plt.xlabel('Data')
 plt.savefig(caminho+'/'+'infectados'+hoje+'jpg')
 plt.show()
+
+
 
 ## Calcular taxa de crescimento
 plt.style.use('seaborn')
@@ -144,10 +154,11 @@ plt.show()
 
 #Plot Rate of new cases per test
 plt.style.use('seaborn')
-dfPT1.loc['2020-04-04':,['new tests rate','Total test rate']].plot(style='.-',rot=70,title='Rácio de infectados / Número de testes')
+dfPT1.loc['2020-04-04':,'Total test rate'].plot(style='.-',rot=70,title='Rácio infectados por testes', color='g')
+#dfPT1.loc['2020-04-04':,['new tests rate','Total test rate']].plot(style='.-',rot=70,title='Rácio de infectados / Número de testes')
 plt.ylabel('Rácio')
 plt.xlabel('Data')
-plt.legend(['Rácio diário','Rácio total infectados/testes'])
+#plt.legend(['Rácio diário','Rácio total infectados/testes'])
 plt.tight_layout()
 plt.savefig(caminho+'/'+'Racio_testes'+hoje+'jpg')
 plt.show()
@@ -177,12 +188,12 @@ dfPT1['UCI rates'] = dfPT1.internados_uci.pct_change()*100
 dfPT1['rate internados em UCI'] = (dfPT1.internados_uci / dfPT1.internados)*100
 
 #UCI rate plot
-dfPT1['rate internados em UCI'].plot(legend=False, rot=70)
-plt.title('Rácio cuidados intensivos / internados')
-plt.ylabel('Rácio')
-plt.xlabel('Data')
-plt.savefig(caminho+'/'+'Racio UCI'+hoje+'jpg')
-plt.show()
+#dfPT1['rate internados em UCI'].plot(legend=False, rot=70)
+#plt.title('Rácio cuidados intensivos / internados')
+#plt.ylabel('Rácio')
+#plt.xlabel('Data')
+#plt.savefig(caminho+'/'+'Racio UCI'+hoje+'jpg')
+#plt.show()
 
 #Casos activos recuperados e mortos
 dfPT1[['obitos','recuperados']].plot(color=['r','g'], rot=70, title='Recuperados e Óbitos')
