@@ -2,36 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afca47f5-95cd-4cb4-9fd4-b7d28b0a352f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Ativos2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Internacional2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Internacional_deathInf2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Internados e UCI2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Percentagem_mortos_total2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Racio UCI2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Racio_infectados2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Racio_testes2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Recuperados_Obitos2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/Testes2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/deceased_2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/deceased_gender_2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-27/infectados2020-04-27jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Ativos2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Internacional2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Internacional_deathInf2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Internados e UCI2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Percentagem_mortos_total2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Racio UCI2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Racio_infectados2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Racio_testes2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Recuperados_Obitos2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/Testes2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/deceased_2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/deceased_gender_2020-04-28jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-28/infectados2020-04-28jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Ativos2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Internacional2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Internacional_deathInf2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Internados e UCI2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Percentagem_mortos_total2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Racio_infectados2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Racio_testes2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Recuperados_Obitos2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/Testes2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/deceased_2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/deceased_gender_2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-29/infectados2020-04-29jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Ativos2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Internacional2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Internacional_deathInf2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Internados e UCI2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Percentagem_mortos_total2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Racio_infectados2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Racio_testes2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Recuperados_Obitos2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/Testes2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/deceased_2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/deceased_gender_2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-04-30/infectados2020-04-30jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Ativos2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Internacional2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Internacional_deathInf2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Internados e UCI2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Percentagem_mortos_total2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Racio_infectados2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Racio_testes2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Recuperados_Obitos2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/Testes2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/deceased_2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/deceased_gender_2020-05-03jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graphs/2020-05-03/infectados2020-05-03jpg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/International Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/International Analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PT_wm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/PT_wm.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portugal_Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portugal_Analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dfInt.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfInt.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dfPT1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT1.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dfPT_agg.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dfPT_agg.pkl" afterDir="false" />
@@ -73,14 +81,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.International Analysis">
+  <component name="RunManager" selected="Python.Portugal_Analysis">
     <configuration name="Covid_Import" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Covid_Analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.International Analysis" />
         <item itemvalue="Python.Portugal_Analysis" />
+        <item itemvalue="Python.International Analysis" />
         <item itemvalue="Python.Covid_Import" />
       </list>
     </recent_temporary>
@@ -343,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587937832359</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="20200428&#10;Montserrat">
+      <created>1588101518610</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1588101518610</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -365,7 +380,8 @@
     <MESSAGE value="20200423" />
     <MESSAGE value="20200424" />
     <MESSAGE value="20200425" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200425" />
+    <MESSAGE value="20200428&#10;Montserrat" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200428&#10;Montserrat" />
   </component>
   <component name="WindowStateProjectService">
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587240156543">
@@ -373,52 +389,60 @@
     </state>
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.724@0.23.1280.724" timestamp="1587240156543" />
     <state x="328" y="121" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.727@0.23.1280.727" timestamp="1586125978896" />
-    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1587937832072">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="252" y="23" key="CommitChangelistDialog2" timestamp="1588101518251">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.721@0.23.1280.721" timestamp="1586796102268" />
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.723@0.23.1280.723" timestamp="1587937832072" />
-    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1587662699332" />
+    <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1588101518251" />
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1587226939730" />
     <state x="252" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1587133039347" />
-    <state width="1239" height="89" key="GridCell.Tab.0.bottom" timestamp="1588101484993">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state x="423" y="122" key="FileChooserDialogImpl" timestamp="1588524194913">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="423" y="122" key="FileChooserDialogImpl/0.23.1280.726@0.23.1280.726" timestamp="1588524194913" />
+    <state width="1239" height="89" key="GridCell.Tab.0.bottom" timestamp="1588523552319">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1586706350923" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1586790132667" />
-    <state width="1239" height="89" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1588101155162" />
-    <state width="1239" height="89" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1588101484993" />
+    <state width="1239" height="89" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1588181313053" />
+    <state width="1239" height="89" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1588101522461" />
+    <state width="1239" height="89" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1588523552319" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1587223112148" />
     <state width="1239" height="123" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1587132618821" />
-    <state width="1239" height="89" key="GridCell.Tab.0.center" timestamp="1588101484992">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1239" height="89" key="GridCell.Tab.0.center" timestamp="1588523552319">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586266633431" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1586706350922" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="89" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1588101155161" />
-    <state width="1239" height="89" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1588101484992" />
+    <state width="1239" height="89" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1588181313052" />
+    <state width="1239" height="89" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1588101522460" />
+    <state width="1239" height="89" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1588523552319" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1587223112147" />
     <state width="1239" height="123" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1587132618820" />
-    <state width="1239" height="89" key="GridCell.Tab.0.left" timestamp="1588101484992">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1239" height="89" key="GridCell.Tab.0.left" timestamp="1588523552318">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586266633430" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1586706350921" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="89" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1588101155161" />
-    <state width="1239" height="89" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1588101484992" />
+    <state width="1239" height="89" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1588181313052" />
+    <state width="1239" height="89" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1588101522460" />
+    <state width="1239" height="89" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1588523552318" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1587223112147" />
     <state width="1239" height="123" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1587132618820" />
-    <state width="1239" height="89" key="GridCell.Tab.0.right" timestamp="1588101484993">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1239" height="89" key="GridCell.Tab.0.right" timestamp="1588523552319">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1259" height="162" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586266633432" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1586706350923" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1586790132666" />
-    <state width="1239" height="89" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1588101155161" />
-    <state width="1239" height="89" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1588101484993" />
+    <state width="1239" height="89" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1588181313053" />
+    <state width="1239" height="89" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1588101522460" />
+    <state width="1239" height="89" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1588523552319" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1587223112147" />
     <state width="1239" height="123" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1587132618821" />
     <state width="1239" height="204" key="GridCell.Tab.1.bottom" timestamp="1587751873964">
@@ -437,13 +461,18 @@
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="1239" height="204" key="GridCell.Tab.1.right/0.23.1280.723@0.23.1280.723" timestamp="1587751873963" />
-    <state x="317" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1588022671925">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="137" y="23" key="SettingsEditor" timestamp="1588524521915">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="137" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1588524521915" />
+    <state x="317" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1588265277064">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1586252769089" />
     <state x="317" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1586686171976" />
-    <state x="317" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.723@0.23.1280.723" timestamp="1588022671925" />
+    <state x="317" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.723@0.23.1280.723" timestamp="1588181068104" />
     <state x="317" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.724@0.23.1280.724" timestamp="1587314188131" />
+    <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.726@0.23.1280.726" timestamp="1588265277064" />
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1586126103826" />
     <state x="423" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586878566353">
       <screen x="0" y="23" width="1280" height="724" />
