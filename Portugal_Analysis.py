@@ -68,7 +68,7 @@ plt.show()
 
 #Obitos por faixa etária
 bola = general[general.obitos!=0][['obitos','%deceased_total']]
-explode = (0, 0, 0, 0, 0.05)
+explode = (0,0, 0, 0, 0, 0.05)
 plt.pie(bola.obitos, explode=explode,labels=bola.index,autopct='%1.1f%%')
 plt.title('Percentagem de mortos por faixa etária')
 plt.savefig(caminho+'/'+'Percentagem_mortos_total'+hoje+'jpg')
